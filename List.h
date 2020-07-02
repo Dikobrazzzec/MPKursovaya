@@ -4,30 +4,40 @@
 #include <QDebug>
 
 class Node {
-public:
     int DecreeNumber;
     int DrivLicenNumber;
     QString NSP;
     double TotalFine;
     class Node *ptr;
-    int count;
+ //   int count;
 
     friend class List;
 
 };
 
 class List {
-public:
     Node *head;
     int count = 0;
-    Node * Prev(Node*);
+    Node * Prev(Node* node) {
+        if (isEmpty()==false) {
+            return nullptr;
+        }
+        if (node == head) {
+            return nullptr;
+        }
+        Node* p = head;
+        while (p != node) {
+            p=p->ptr;
+        }
+    }
 public:
     Node * TailPtr=nullptr;
-    Node* FreePtr;
+    Node* FindPtr;
     Node* UsePtr;
     List () {
         head = nullptr;
     }
+    ~List(){}
 
     bool isEmpty () {
         if (head == nullptr) {
@@ -37,18 +47,16 @@ public:
         }
     }
 
-    Node* Add (int DC_, int DLN_, QString NSP_, double TF_,int f, Node* node ) {
+    Node* Adding (int DC_, int DLN_, QString NSP_, double TF_, Node* node ) {
         Node *elem = new Node();
         elem->DecreeNumber = DC_;
         elem->DrivLicenNumber=DLN_;
         elem->NSP=NSP_;
         elem->TotalFine=TF_;
-        elem->count=f;
- //       if (head ==nullptr) {
-  //          elem->ptr=nullptr;
-  //          head = elem;
+  //      if (TailPtr==nullptr) {
+  //      elem->count=1;
   //      } else {
-  //          elem->ptr=nullptr;
+   //     elem->count=TailPtr->count+1;
    //     }
         if(node==nullptr) {
             elem->ptr=head;
@@ -70,10 +78,22 @@ public:
                 TailPtr = elem;
                 return elem;
             }
- //       elem->ptr = node->ptr;
- //       node->ptr = elem;
-}
-  }
+        }
+    }
+
+    QString Deletion(int DC_) {
+
+        if(Find(DC_)==nullptr) {return "Нет такого узла";}
+        if(Find(DC_)==head) {
+            head = head->ptr;
+            return "Корневой узел удален";
+        } else {
+        Node *p =Prev(Find(DC_));
+        p->ptr=Find(DC_)->ptr;
+        delete Find(DC_);
+        return "Узел удален";
+        }
+    }
 
     int getValue (Node *p) {
         return p->DecreeNumber;
@@ -87,14 +107,12 @@ public:
         }
     }
 
-    Node* Find ( int DC_, int DLN_) {
+    Node* Find ( int DC_) {
         Node*p = head;
         while (p!=nullptr) {
             if (DC_==p->DecreeNumber) {
-                if (DLN_==p->DrivLicenNumber) {
-                FreePtr = p;
+                FindPtr = p;
                 return p;
-                }
             }
             p=Next(p);
         }
@@ -125,7 +143,7 @@ public:
             Node *p = head;
             while (p!= nullptr)
              {
-                qDebug()<< p->DecreeNumber<<" "<<p->count;
+                qDebug()<<" "<< p->DecreeNumber<<" "<<p->NSP<<" "<<p->TotalFine;
                 p=Next(p);
             }
         }
