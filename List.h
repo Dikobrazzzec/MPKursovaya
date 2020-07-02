@@ -2,6 +2,7 @@
 #define LIST_H
 #include <QString>
 #include <QDebug>
+#include <QFile>
 
 class Node {
     int DecreeNumber;
@@ -31,6 +32,9 @@ class List {
         }
     }
 public:
+    //int DCi,DNi;    на случай если делать норм ввод
+  //  QString NSPi;
+//    double TFi;
     Node * TailPtr=nullptr;
     Node* FindPtr;
     Node* UsePtr;
@@ -146,6 +150,36 @@ public:
                 qDebug()<<" "<< p->DecreeNumber<<" "<<p->NSP<<" "<<p->TotalFine;
                 p=Next(p);
             }
+        }
+    }
+
+    void Output (int DC_) {
+        Node* p = Find(DC_);
+        QFile file ("E:\\out.txt");
+        if (file.open(QIODevice::WriteOnly)) {
+            QTextStream out(&file);
+            out<<p->NSP;
+            out<<p->DecreeNumber;
+            out<<p->DrivLicenNumber;
+            out<<p->TotalFine;
+            file.close();
+    //        if (out.status()!= QTextStream::Ok){
+  //              qDebug()<<"Error";
+//            }
+        }
+    }
+
+    void Input () {
+        QFile file ("E:\\in.txt");
+        if (file.open(QIODevice::ReadOnly)) {
+            QTextStream in(&file);
+            QString str;
+            while (!in.atEnd()) {
+                str=in.readLine();
+            }
+ //           if(in.status()!=QTextStream::Ok){
+ //               qDebug()<<"Error";
+  //          }
         }
     }
 
