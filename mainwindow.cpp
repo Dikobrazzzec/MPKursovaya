@@ -59,7 +59,7 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_pushButton_3_clicked()  //cor DC
 {
     starter.CorrcetDC(starter.FindPtr, ui->spinBox_5->value());
-    ui->label_17->setText("Номер постановления измене");
+    ui->label_17->setText("Номер постановления изменен");
 }
 
 void MainWindow::on_pushButton_4_clicked()

@@ -90,11 +90,13 @@ public:
         if(Find(DC_)==nullptr) {return "Нет такого узла";}
         if(Find(DC_)==head) {
             head = head->ptr;
+            FindPtr=nullptr;
             return "Корневой узел удален";
         } else {
         Node *p =Prev(Find(DC_));
         p->ptr=Find(DC_)->ptr;
         delete Find(DC_);
+        FindPtr=nullptr;
         return "Узел удален";
         }
     }
