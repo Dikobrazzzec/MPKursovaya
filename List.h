@@ -8,7 +8,7 @@ class Node {
     int DecreeNumber;
     int DrivLicenNumber;
     QString NSP;
-    double TotalFine;
+    int TotalFine;
     class Node *ptr;
  //   int count;
 
@@ -18,7 +18,9 @@ class Node {
 
 class List {
     Node *head;
-    int count = 0;
+    int DCi,DNi;   // на случай если делать норм ввод
+    QString NSPi;
+    double TFi;
     Node * Prev(Node* node) {
         if (isEmpty()==false) {
             return nullptr;
@@ -30,14 +32,12 @@ class List {
         while (p != node) {
             p=p->ptr;
         }
+        return p;
     }
 public:
-    //int DCi,DNi;    на случай если делать норм ввод
-  //  QString NSPi;
-//    double TFi;
-    Node * TailPtr=nullptr;
-    Node* FindPtr;
-    Node* UsePtr;
+    Node* TailPtr=nullptr;
+    Node* FindPtr=nullptr;
+//    Node* UsePtr;
     List () {
         head = nullptr;
     }
@@ -51,7 +51,7 @@ public:
         }
     }
 
-    Node* Adding (int DC_, int DLN_, QString NSP_, double TF_, Node* node ) {
+    Node* Adding (int DC_, int DLN_, QString NSP_, int TF_, Node* node ) {
         Node *elem = new Node();
         elem->DecreeNumber = DC_;
         elem->DrivLicenNumber=DLN_;
@@ -135,10 +135,25 @@ public:
         p->NSP=NSP_;
     }
 
-    void CorrcetTF(Node* p, double TF_) {
+    void CorrcetTF(Node* p, int TF_) {
         p->TotalFine=TF_;
     }
 
+    int returnerDC (Node* node) {
+        return node->DecreeNumber;
+    }
+
+    int returnerDLN (Node* node) {
+        return node->DrivLicenNumber;
+    }
+
+    QString returnerNSP (Node* node) {
+        return node->NSP;
+    }
+
+    int returnerTF(Node* node) {
+        return node->TotalFine;
+    }
 
     void Print () {
         if (isEmpty()==false) {
@@ -176,7 +191,16 @@ public:
             QString str;
             while (!in.atEnd()) {
                 str=in.readLine();
+                NSPi = str;
+                str=in.readLine();
+                DCi=str.toInt();
+                str=in.readLine();
+                DNi=str.toInt();
+                str=in.readLine();
+                TFi=str.toInt();
+                Adding(DCi,DNi, NSPi,TFi,TailPtr);
             }
+            file.close();
  //           if(in.status()!=QTextStream::Ok){
  //               qDebug()<<"Error";
   //          }

@@ -6,14 +6,407 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1182</width>
-    <height>626</height>
+    <width>1166</width>
+    <height>505</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>110</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>361</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid black;
+}
+
+QPushButton:pressed {
+    background-color:darkcyan ;
+}</string>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>120</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>230</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink;
+  color: black; 
+  border: 1px solid black;
+}
+
+QPushButton:pressed {
+    background-color:blue ;
+}</string>
+    </property>
+    <property name="text">
+     <string>Изменить номер водительских прав</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Поиск</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>360</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>40</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Номер постановеления</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ФИО</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>360</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>270</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink;
+  color: black; 
+  border: 1px solid black;
+}
+
+QPushButton:pressed {
+    background-color:blue ;
+}</string>
+    </property>
+    <property name="text">
+     <string>Изменить ФИО</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>80</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>360</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>260</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: green;
+  color: black; 
+  border: 1px solid black;
+}
+
+QPushButton:pressed {
+    background-color:darkmagenta  ;
+}</string>
+    </property>
+    <property name="text">
+     <string>Сохранить в  файл</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>290</y>
+      <width>371</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>30</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Номер постановления</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_6">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>70</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>40</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>160</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="maximum">
+     <number>100000</number>
+    </property>
+   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -57,88 +450,82 @@
  прав</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>120</y>
-      <width>181</width>
+      <x>400</x>
+      <y>160</y>
+      <width>361</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel {
+     <string notr="true">QPushButton {
   background-color: white;
-  color: black; 
+  color: red; 
   border: 1px solid black;
 }
-</string>
+
+QPushButton:pressed {
+    background-color:black ;
+}</string>
     </property>
     <property name="text">
-     <string>ФИО</string>
+     <string>Удалить</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QPushButton" name="pushButton_10">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>160</y>
-      <width>181</width>
+      <x>400</x>
+      <y>120</y>
+      <width>361</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel {
-  background-color: white;
+     <string notr="true">QPushButton {
+  background-color: yellow;
   color: black; 
   border: 1px solid black;
 }
-</string>
+
+QPushButton:pressed {
+    background-color:red ;
+}</string>
     </property>
     <property name="text">
-     <string>Сумма штрафа</string>
+     <string>Вывести на экран элемент</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>120</y>
-      <width>181</width>
+      <x>800</x>
+      <y>310</y>
+      <width>361</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLineEdit {
-  background-color: white;
+     <string notr="true">QPushButton {
+  background-color: pink;
   color: black; 
   border: 1px solid black;
 }
-</string>
+
+QPushButton:pressed {
+    background-color:blue ;
+}</string>
+    </property>
+    <property name="text">
+     <string>Изменить сумму штрафа</string>
     </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox">
+   <widget class="QSpinBox" name="spinBox_4">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>160</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QDoubleSpinBox {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinBox">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
+      <x>580</x>
       <y>40</y>
       <width>181</width>
       <height>41</height>
@@ -152,23 +539,35 @@
 }
 </string>
     </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox_2">
+   <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>80</y>
-      <width>181</width>
+      <x>800</x>
+      <y>190</y>
+      <width>361</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QSpinBox {
-  background-color: white;
+     <string notr="true">QPushButton {
+  background-color: pink;
   color: black; 
   border: 1px solid black;
 }
-</string>
+
+QPushButton:pressed {
+    background-color:blue ;
+}</string>
+    </property>
+    <property name="text">
+     <string>Изменить номер постановлениея</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -190,435 +589,6 @@
     </property>
     <property name="text">
      <string>Добавление</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinBox_4">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>40</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QSpinBox {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>0</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-    <property name="text">
-     <string>Поиск</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>40</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-    <property name="text">
-     <string>Номер постановеления</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinBox_5">
-    <property name="geometry">
-     <rect>
-      <x>1000</x>
-      <y>40</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QSpinBox {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>40</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-    <property name="text">
-     <string>Номер постановления</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="spinBox_6">
-    <property name="geometry">
-     <rect>
-      <x>1000</x>
-      <y>80</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QSpinBox {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>0</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-    <property name="text">
-     <string>Редактирование</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>160</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-    <property name="text">
-     <string>Сумма штрафа</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>120</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-    <property name="text">
-     <string>ФИО</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>1000</x>
-      <y>120</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLineEdit {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-   </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
-    <property name="geometry">
-     <rect>
-      <x>1000</x>
-      <y>160</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QDoubleSpinBox {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>80</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-    </property>
-    <property name="text">
-     <string>Номер водительских прав</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>160</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: white;
-  color: red; 
-  border: 1px solid black;
-}
-
-QPushButton:pressed {
-    background-color:black ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Удалить</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>200</y>
-      <width>361</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: rgb(255, 151, 57);
-  color: white; 
-  border: 1px solid black;
-}
-
-QPushButton:pressed {
-    background-color:darkcyan ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Добавить</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>200</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: pink;
-  color: black; 
-  border: 1px solid black;
-}
-
-QPushButton:pressed {
-    background-color:blue ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Изменить номер постановлениея</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>240</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: pink;
-  color: black; 
-  border: 1px solid black;
-}
-
-QPushButton:pressed {
-    background-color:blue ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Изменить номер водительских прав</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_5">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>280</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: pink;
-  color: black; 
-  border: 1px solid black;
-}
-
-QPushButton:pressed {
-    background-color:blue ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Изменить ФИО</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_6">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>320</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: pink;
-  color: black; 
-  border: 1px solid black;
-}
-
-QPushButton:pressed {
-    background-color:blue ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Изменить сумму штрафа</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_7">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>80</y>
-      <width>361</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: yellow;
-  color: black; 
-  border: 1px solid black;
-}
-
-QPushButton:pressed {
-    background-color:red ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Поиск</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_8">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>260</y>
-      <width>361</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-  background-color: green;
-  color: black; 
-  border: 1px solid black;
-}
-
-QPushButton:pressed {
-    background-color:darkmagenta  ;
-}</string>
-    </property>
-    <property name="text">
-     <string>Сохранить в  файл</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_9">
@@ -645,11 +615,161 @@ QPushButton:pressed {
      <string>Загрузить из файла</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_10">
+   <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>120</y>
+      <x>800</x>
+      <y>-10</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Редактирование</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Сумма штрафа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>250</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: fuchsia;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>                                       Системные уведомления</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>150</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Сумма штрафа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>360</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>70</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Номер водительских прав</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_5">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>30</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>80</y>
       <width>361</width>
       <height>41</height>
      </rect>
@@ -666,16 +786,16 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string>Вывести на экран элемент</string>
+     <string>Поиск</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>360</y>
-      <width>1181</width>
-      <height>221</height>
+      <x>800</x>
+      <y>110</y>
+      <width>181</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -687,57 +807,40 @@ QPushButton:pressed {
 </string>
     </property>
     <property name="text">
-     <string/>
+     <string>ФИО</string>
     </property>
    </widget>
-   <zorder>label</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_4</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>doubleSpinBox</zorder>
-   <zorder>spinBox</zorder>
-   <zorder>spinBox_2</zorder>
-   <zorder>label_5</zorder>
-   <zorder>spinBox_5</zorder>
-   <zorder>label_10</zorder>
-   <zorder>spinBox_6</zorder>
-   <zorder>label_11</zorder>
-   <zorder>label_12</zorder>
-   <zorder>label_13</zorder>
-   <zorder>lineEdit_2</zorder>
-   <zorder>doubleSpinBox_2</zorder>
-   <zorder>label_14</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton_4</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>pushButton_8</zorder>
-   <zorder>pushButton_9</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_8</zorder>
-   <zorder>pushButton_10</zorder>
-   <zorder>spinBox_4</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_7</zorder>
-   <zorder>label_9</zorder>
+   <widget class="QSpinBox" name="spinBox_7">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>150</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+  background-color: white;
+  color: black; 
+  border: 1px solid black;
+}
+</string>
+    </property>
+    <property name="maximum">
+     <number>100000</number>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1182</width>
+     <width>1166</width>
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
-    <property name="title">
-     <string>Шрафы ГИБДД</string>
-    </property>
-   </widget>
-   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
